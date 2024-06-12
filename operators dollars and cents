@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int dollar1, cent1, dollar2, cent2;
+    int total_dollars, total_cents;
+
+    // Input the first amount in dollars and cents
+    scanf("%d %d", &dollar1, &cent1);
+
+    // Input the second amount in dollars and cents
+    scanf("%d %d", &dollar2, &cent2);
+
+    // Calculate the total cents and dollars
+    total_cents = cent1 + cent2;
+    total_dollars = dollar1 + dollar2 + (total_cents / 100);
+    total_cents = total_cents % 100;
+
+    // Print the result
+    printf("%d\n%d\n", total_dollars, total_cents);
+
+    return 0;
+}
