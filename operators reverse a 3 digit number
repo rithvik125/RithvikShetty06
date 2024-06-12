@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int number, reversedNumber;
+    int digit1, digit2, digit3;
+
+    // Read the input number
+    scanf("%d", &number);
+
+    // Extract the digits
+    digit1 = number % 10;        // Get the last digit
+    digit2 = (number / 10) % 10; // Get the middle digit
+    digit3 = number / 100;       // Get the first digit
+
+    // Form the reversed number
+    reversedNumber = digit1 * 100 + digit2 * 10 + digit3;
+
+    // Print the reversed number
+    printf("%d\n", reversedNumber);
+
+    return 0;
+}
