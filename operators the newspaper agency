@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c;
+
+    // Input the number of copies sold, the selling price per copy, and the cost per copy
+
+    scanf("%d", &a);
+   
+    scanf("%d", &b);
+   
+    scanf("%d", &c);
+
+    // Calculate the total revenue
+    int total_revenue = a * b;
+
+    // Calculate the total cost
+    int total_cost = (a * c) + 100;
+
+    // Calculate the profit
+    int profit = total_revenue - total_cost;
+
+    // Print the profit
+    printf("%d\n", profit);
+
+    return 0;
+}
