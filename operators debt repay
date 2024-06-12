@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float p,r,n,i,am,ds,fm;
+    scanf("%f %f %f",&p,&r,&n);
+    i=(p*r*n)/100;
+    am=i+p;
+    ds=i*0.02f;
+    fm=am-ds;
+    printf("%.2f\n",i);
+    printf("%.2f\n",am);
+    printf("%.2f\n",ds);
+    printf("%.2f\n",fm);
+      
+    return 0;
+}
