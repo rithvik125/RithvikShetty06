@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    // Variable to hold the ASCII value
+    int ascii_value;
+    
+    // Input the ASCII value from the system
+    scanf("%d", &ascii_value);
+    
+    // Print the equivalent character
+    printf("%c\n", (char)ascii_value);
+    
+    return 0;
+}
