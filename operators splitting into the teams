@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int total_friends, num_teams;
+
+    // Input the number of friends and the number of teams
+    
+    scanf("%d", &total_friends);
+
+    scanf("%d", &num_teams);
+
+    // Calculate the number of friends per team and the number of friends left out
+    int friends_per_team = total_friends / num_teams;
+    int left_out_friends = total_friends % num_teams;
+
+    // Print the results
+    printf("The number of friends in each team is %d and left out is %d\n", friends_per_team, left_out_friends);
+
+    return 0;
+}
