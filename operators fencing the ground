@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int length, breadth;
+
+    // Input the length and breadth of the ground
+    scanf("%d", &length);
+    scanf("%d", &breadth);
+
+    // Calculate the perimeter of the rectangle
+    int perimeter = 2 * (length + breadth);
+
+    // Calculate the area of the rectangle
+    int area = length * breadth;
+
+    // Print the results
+    printf("The required length is %d m\n", perimeter);
+    printf("The required area of carpet is %d sqm\n", area);
+
+    return 0;
+}
