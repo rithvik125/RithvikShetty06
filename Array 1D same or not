@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+const char* are_arrays_same(int size1, int array1[], int size2, int array2[]) {
+   
+    if (size1 != size2) {
+        return "Not Same";
+    }
+    
+    
+    int sum1 = 0, sum2 = 0;
+    for (int i = 0; i < size1; i++) {
+        sum1 += array1[i];
+    }
+    for (int i = 0; i < size2; i++) {
+        sum2 += array2[i];
+    }
+
+    if (sum1 != sum2) {
+        return "Not Same";
+    }
+    
+    return "Same";
+}
+
+int main() {
+    int size1, size2;
+
+   
+    scanf("%d", &size1);
+    scanf("%d", &size2);
+
+   
+    int array1[size1];
+    
+    for (int i = 0; i < size1; i++) {
+        scanf("%d", &array1[i]);
+    }
+
+  
+    int array2[size2];
+    for (int i = 0; i < size2; i++) {
+        scanf("%d", &array2[i]);
+    }
+
+    
+    const char* result = are_arrays_same(size1, array1, size2, array2);
+    printf("%s\n", result);
+
+    return 0;
+}
