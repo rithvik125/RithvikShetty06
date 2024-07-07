@@ -1,0 +1,8 @@
+def reverse_array():
+    n = int(input().strip())  # Read the size of the array
+    arr = list(map(int, input().strip().split()))  # Read the array elements
+    reversed_arr = arr[::-1]  # Reverse the array using slicing
+    print(" ".join(map(str, reversed_arr)))  # Print the reversed array
+
+# Call the function to execute
+reverse_array()
