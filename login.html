@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novell Services Login</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: #2d3436;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: gold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.2) rotate(10deg);
+        }
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0984e3;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+            position: relative;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .input-container {
+            position: relative;
+            width: 100%;
+        }
+        .input-container input, .input-container select {
+            width: 100%;
+            padding: 10px 40px;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+        .input-container i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #0984e3;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #0984e3;
+            box-shadow: 0 0 5px rgba(9, 132, 227, 0.5);
+        }
+        button {
+            width: 100%;
+            background-color: #0984e3;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #74b9ff;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group.inline {
+            display: flex;
+            align-items: center;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Star icon as the website logo -->
+    <i class="fas fa-star logo"></i>
+
+    <form>
+        <h1><i class="fas fa-user-circle"></i> Novell Services Login</h1>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <div class="input-container">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="city">City of Employment:</label>
+            <div class="input-container">
+                <i class="fas fa-city"></i>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="web_server">Web Server:</label>
+            <div class="input-container">
+                <i class="fas fa-server"></i>
+                <select id="web_server" name="web_server" required>
+                    <option value="">Please select</option>
+                    <option value="server1">Server 1</option>
+                    <option value="server2">Server 2</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Please specify your role:</label>
+            <div class="form-group inline">
+                <input type="radio" id="role_admin" name="role" value="admin" required>
+                <label for="role_admin"><i class="fas fa-user-shield"></i> Admin</label>
+            </div>
+            <div class="form-group inline">
+                <input type="radio" id="role_engineer" name="role" value="engineer">
+                <label for="role_engineer"><i class="fas fa-cogs"></i> Engineer</label>
+            </div>
+            <div class="form-group inline">
+                <input type="radio" id="role_manager" name="role" value="manager">
+                <label for="role_manager"><i class="fas fa-briefcase"></i> Manager</label>
+            </div>
+            <div class="form-group inline">
+                <input type="radio" id="role_guest" name="role" value="guest">
+                <label for="role_guest"><i class="fas fa-user"></i> Guest</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Single sign-on to the following:</label>
+            <div class="form-group inline">
+                <input type="checkbox" id="service_mail" name="services" value="mail">
+                <label for="service_mail"><i class="fas fa-envelope"></i> Mail</label>
+            </div>
+            <div class="form-group inline">
+                <input type="checkbox" id="service_payroll" name="services" value="payroll">
+                <label for="service_payroll"><i class="fas fa-money-bill-wave"></i> Payroll</label>
+            </div>
+            <div class="form-group inline">
+                <input type="checkbox" id="service_self_service" name="services" value="self_service">
+                <label for="service_self_service"><i class="fas fa-user-cog"></i> Self Service</label>
+            </div>
+        </div>
+        <div class="form-group actions">
+            <button type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+            <button type="reset"><i class="fas fa-undo"></i> Reset</button>
+        </div>
+    </form>
+</body>
+</html>
