@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 200px;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product-card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #555;
+        }
+        .product-card .price {
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .product-card button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .product-card button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Best Deals</h1>
+    </header>
+    <div class="product-container">
+        <!-- Product 1: Best Truewireless -->
+        <div class="product-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/51jGCELP5zL._SL1100_.jpg" alt="Best Truewireless"> <!-- Replace with your image URL -->
+            <h3>Best Truewireless</h3>
+            <p class="price">From $6990</p>
+            <button>Grab Now</button>
+        </div>
+
+        <!-- Product 2: Projector -->
+        <div class="product-card">
+            <img src="https://www.bhphotovideo.com/images/images2500x2500/Panasonic_PT_EX12KU_PT_EX12KU_LCD_Projector_871669.jpg" alt="Projector"> <!-- Replace with your image URL -->
+            <h3>Projector</h3>
+            <p class="price">From $499*</p>
+            <button>Grab Now</button>
+        </div>
+
+        <!-- Product 3: Best Selling Mobile -->
+        <div class="product-card">
+            <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6570/6570300cv11d.jpg" alt="Best Selling Mobile"> <!-- Replace with your image URL -->
+            <h3>Best Selling Mobile</h3>
+            <p class="price">From $1,399</p>
+            <button>Grab Now</button>
+        </div>
+
+        <!-- Product 4: Fastrack Smartwatch -->
+        <div class="product-card">
+            <img src="https://i.pinimg.com/originals/cc/18/a2/cc18a2bd5714ba8065ca4933f8d21402.jpg" alt="Fastrack Smartwatch"> <!-- Replace with your image URL -->
+            <h3>Best watches</h3>
+            <p class="price">From $1,399</p>
+            <button>Grab Now</button>
+        </div>
+    </div>
+</body>
+</html>
