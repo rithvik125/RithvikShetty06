@@ -1,0 +1,29 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts",
+    "app/(tabs)/profile.js",
+    "app/(tabs)/home.js",
+    "app/(tabs)/cart.js",
+    "app/_layout.js",
+    "app/screens/VarietiesScreen.js",
+    "app/screens/ProductDetails.js",
+    "app/screens/OrderSummary.js",
+    "app/screens/MyOrders.js",
+    "app/screens/EditProfileScreen.js",
+    "app/screens/ChangePasswordScreen.js",
+    "app/(tabs)/TabLayout.js",
+    "app/(tabs)/_layout.js"
+, "components/LoginRequiredModal.js", "components/LoadingScreen.js", "app/modal.js", "app/RegistrationScreen.js", "app/order-details.js", "app/index.js", "app/change-password.js"  ]
+}
